@@ -156,7 +156,7 @@ Below is a text-art representation. For beautiful diagrams, you can use tools li
 
   - Both input and output variables are provided during training.
   - The model learns the relationship and can predict the output for new inputs.
-- **Example Table:**
+- **Example Table:**</br>
   ![img1](image/Note/1751180735918.png)
 
   *Here, "Income" and "Credit Score" are inputs; "Loan" (Yes/No) is the output (label).*
