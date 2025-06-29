@@ -56,8 +56,8 @@ Instead of programming every step, we give machines lots of data and let them fi
 
 ## 🧠 AI — Artificial Intelligence
 
-- **Definition:**The broad field of making machines smart (mimic human intelligence and reasoning).
-- **Key Point:****AI = Any system that mimics human intelligence**
+- **Definition:** The broad field of making machines smart (mimic human intelligence and reasoning).
+- **Key Point:** **AI = Any system that mimics human intelligence**
 - **Scope:**
   The "big umbrella" — includes rule-based systems, logic, planning, as well as ML and DL.
 
@@ -72,8 +72,8 @@ Instead of programming every step, we give machines lots of data and let them fi
 
 ## 🧩 ML — Machine Learning
 
-- **Definition:**A subset of AI where machines **learn from data** and improve themselves over time (without being explicitly programmed for every task).
-- **Key Point:****ML = AI that learns from data**
+- **Definition:** A subset of AI where machines **learn from data** and improve themselves over time (without being explicitly programmed for every task).
+- **Key Point:** **ML = AI that learns from data**
 - **Scope:**
   A branch inside AI. Focuses on algorithms that find patterns in data.
 
@@ -88,8 +88,8 @@ Instead of programming every step, we give machines lots of data and let them fi
 
 ## 🧬 DL — Deep Learning
 
-- **Definition:**A subset of Machine Learning that uses **neural networks** (inspired by the human brain) to handle very complex patterns and big data (images, speech, etc.).
-- **Key Point:****DL = ML using neural networks for big, complex data**
+- **Definition:** A subset of Machine Learning that uses **neural networks** (inspired by the human brain) to handle very complex patterns and big data (images, speech, etc.).
+- **Key Point:** **DL = ML using neural networks for big, complex data**
 - **Scope:**
   A specialized area within ML, excels at tasks like image, sound, and language understanding.
 
