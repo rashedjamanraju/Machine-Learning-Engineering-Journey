@@ -2,7 +2,7 @@
 
 ---
 
-Machine Learning is a **method of teaching computers** to learn from **data**—similar to how humans learn from experience.  
+Machine Learning is a **method of teaching computers** to learn from **data**—similar to how humans learn from experience.
 Instead of programming every step, we provide machines with lots of data and let them discover patterns on their own.
 
 **✨ Real-Life Examples of ML:**
@@ -57,6 +57,7 @@ Instead of programming every step, we provide machines with lots of data and let
 - **Scope:** The "big umbrella"—includes rule-based systems, logic, planning, as well as ML and DL.
 
 **Examples:**
+
 - Playing chess like a human (AI chess bots)
 - Talking to Alexa or Siri (voice assistants)
 - Self-driving cars (autonomous navigation)
@@ -71,6 +72,7 @@ Instead of programming every step, we provide machines with lots of data and let
 - **Scope:** A branch inside AI. Focuses on algorithms that find patterns in data.
 
 **Examples:**
+
 - YouTube recommending videos based on your watch history
 - Netflix predicting your next favorite show
 - Gmail filtering spam emails
@@ -85,6 +87,7 @@ Instead of programming every step, we provide machines with lots of data and let
 - **Scope:** A specialized area within ML, excels at tasks like image, sound, and language understanding.
 
 **Examples:**
+
 - Face recognition unlock on phones
 - ChatGPT and other chatbots 🤖
 - Self-driving car vision (image/video analysis)
@@ -141,6 +144,7 @@ Below is a text-art representation. For beautiful diagrams, you can use tools li
 
 - **What is it?** Like a student learning from a teacher. The machine gets both input data **and** the correct answers (labels), and learns to predict outcomes.
 - **How it works:**
+
   - Both input and output variables are provided during training.
   - The model learns the relationship and can predict the output for new inputs.
 - **Example Table:**
@@ -148,12 +152,11 @@ Below is a text-art representation. For beautiful diagrams, you can use tools li
   ![img1](image/Note/1751180735918.png)
 
   *Here, "Income" and "Credit Score" are inputs; "Loan" (Yes/No) is the output (label).*
-
 - **Popular Algorithms:**
 
   ![image2](image/Note/1751180907917.png)
-
 - **Real-life Examples:**
+
   - Email spam detection (input: email text, output: spam/not spam)
   - Loan approval (input: applicant info, output: approve/deny)
   - Image recognition (input: image, output: label)
@@ -221,9 +224,8 @@ Below is a text-art representation. For beautiful diagrams, you can use tools li
 
 ## 📝 Comments in Python
 
-- **Single Line:**  
-  `# This is a single line comment.`
-- **Multiline:**  
+- **Single Line:**`# This is a single line comment.`
+- **Multiline:**
   Use triple quotes.
   ```python
   """
@@ -263,14 +265,15 @@ Below is a text-art representation. For beautiful diagrams, you can use tools li
 
 | Type     | Example(s)                       |
 | -------- | -------------------------------- |
-| Integer  | `1, 2, -1, -10000, -1e308`       |
-| Complex  | `1+2j`                           |
-| Float    | `1.1, 1.02, -1.99, -2.23e-308`   |
-| String   | `"raju", 'r', "Rashed Jaman"`    |
-| Boolean  | `True, False`                    |
-| NoneType | `None`                           |
+| Integer  | `1, 2, -1, -10000, -1e308`     |
+| Complex  | `1+2j`                         |
+| Float    | `1.1, 1.02, -1.99, -2.23e-308` |
+| String   | `"raju", 'r', "Rashed Jaman"`  |
+| Boolean  | `True, False`                  |
+| NoneType | `None`                         |
 
 **Type Checker:**
+
 ```python
 print(type(age))  # <class 'int'>
 ```
@@ -300,11 +303,10 @@ print(type(age))  # <class 'int'>
 
 ## 🧵 Indexing & Slicing Strings
 
-- **Access character:**  
-  `print(name[1])  # 'y'`
-- **Slice substring:**  
-  `print(name[0:2])  # 'My'`  
-  `print(name[:2])   # 'My'`  
+- **Access character:**`print(name[1])  # 'y'`
+- **Slice substring:**
+  `print(name[0:2])  # 'My'`
+  `print(name[:2])   # 'My'`
   `print(name[2:])   # ' name is Rashed'`
 
 ### 🪓 Slicing with Steps
@@ -384,6 +386,7 @@ Falsy values evaluate as `False` in a boolean context:
 - `set()` (empty set)
 
 Example:
+
 ```python
 if not []:
     print("Empty list is falsy")
@@ -420,46 +423,46 @@ if not []:
 
 | Operator | Meaning        | Example    |
 | -------- | -------------- | ---------- |
-| `+`      | Addition       | `a + b`    |
-| `-`      | Subtraction    | `a - b`    |
-| `*`      | Multiplication | `a * b`    |
-| `/`      | Division       | `a / b`    |
-| `//`     | Floor Div      | `a // b`   |
-| `%`      | Modulus        | `a % b`    |
-| `**`     | Exponent       | `a ** b`   |
+| `+`    | Addition       | `a + b`  |
+| `-`    | Subtraction    | `a - b`  |
+| `*`    | Multiplication | `a * b`  |
+| `/`    | Division       | `a / b`  |
+| `//`   | Floor Div      | `a // b` |
+| `%`    | Modulus        | `a % b`  |
+| `**`   | Exponent       | `a ** b` |
 
 ### Assignment
 
 | Operator | Example   |
 | -------- | --------- |
-| `=`      | `a = 5`   |
+| `=`    | `a = 5` |
 
 ### Compound Assignment
 
 | Operator | Example    | Same as       |
 | -------- | ---------- | ------------- |
-| `+=`     | `a += 2`   | `a = a + 2`   |
-| `-=`     | `a -= 2`   | `a = a - 2`   |
+| `+=`   | `a += 2` | `a = a + 2` |
+| `-=`   | `a -= 2` | `a = a - 2` |
 | ...      | ...        | ...           |
 
 ### Comparison
 
 | Operator | Meaning               |
 | -------- | --------------------- |
-| `==`     | Equal to              |
-| `!=`     | Not equal to          |
-| `>`      | Greater than          |
-| `<`      | Less than             |
-| `>=`     | Greater than or equal |
-| `<=`     | Less than or equal    |
+| `==`   | Equal to              |
+| `!=`   | Not equal to          |
+| `>`    | Greater than          |
+| `<`    | Less than             |
+| `>=`   | Greater than or equal |
+| `<=`   | Less than or equal    |
 
 ### Logical
 
 | Operator | Example     |
 | -------- | ----------- |
-| `and`    | `a and b`   |
-| `or`     | `a or b`    |
-| `not`    | `not a`     |
+| `and`  | `a and b` |
+| `or`   | `a or b`  |
+| `not`  | `not a`   |
 
 ---
 
@@ -475,6 +478,7 @@ else:
 ```
 
 **Example:**
+
 ```python
 age = 18
 if age >= 18:
@@ -548,23 +552,28 @@ print(result)
 ### Types of Arguments
 
 1. **Positional:** Matched by order.
+
    ```python
    def greet(name, age):
        print(f"Hello {name}, you are {age} years old.")
    greet("Rashed", 22)
    ```
 2. **Keyword:** Matched by name.
+
    ```python
    greet(age=22, name="Rashed")
    ```
 3. **Default:** Has a default value.
+
    ```python
    def greet(name, age=18):
        print(f"Hello {name}, you are {age} years old.")
    greet("Rashed")  # uses default age
    ```
 4. **Variable-length:**
+
    - `*args` (tuple), `**kwargs` (dict)
+
    ```python
    def add(*numbers):
        return sum(numbers)
@@ -579,27 +588,27 @@ print(result)
 
 ## 📚 What are Data Structures?
 
-**Data structures** help store, organize, and manipulate data efficiently.  
+**Data structures** help store, organize, and manipulate data efficiently.
 Python has several built-in data structures that make coding simpler and faster.
 
 ---
 
-## 🧱 Four Main Built-In Data Structures
+### 🧱 Four Main Built-In Data Structures
 
-| Structure    | Mutable? | Ordered? | Allows Duplicates? | Heterogeneous? | Syntax              | Example                           |
-| ------------ | -------- | -------- | ------------------ | -------------- | ------------------- | --------------------------------- |
-| **List**     | ✅ Yes   | ✅ Yes   | ✅ Yes             | ✅ Yes         | `[ ]`               | `[1, "a", 3.5, True]`             |
-| **Tuple**    | ❌ No    | ✅ Yes   | ✅ Yes             | ✅ Yes         | `( )`               | `(1, 2, "a")`                     |
-| **Dictionary** | ✅ Yes | ✅*      | ❌ Keys, ✅ Values | ✅ Yes         | `{}`                | `{"a": 1, "b": "cat"}`            |
-| **Set**      | ✅ Yes   | ❌ No    | ❌ No              | ✅ Yes         | `{ }` / `set()`     | `{1, 2, 3}` or `set([1,2,3])`     |
+| Structure            | Mutable? | Ordered? | Allows Duplicates? | Heterogeneous? | Syntax              | Example                           |
+| -------------------- | -------- | -------- | ------------------ | -------------- | ------------------- | --------------------------------- |
+| **List**       | ✅ Yes   | ✅ Yes   | ✅ Yes             | ✅ Yes         | `[ ]`             | `[1, "a", 3.5, True]`           |
+| **Tuple**      | ❌ No    | ✅ Yes   | ✅ Yes             | ✅ Yes         | `( )`             | `(1, 2, "a")`                   |
+| **Dictionary** | ✅ Yes   | ✅*      | ❌ Keys, ✅ Values | ✅ Yes         | `{}`              | `{"a": 1, "b": "cat"}`          |
+| **Set**        | ✅ Yes   | ❌ No    | ❌ No              | ✅ Yes         | `{ }` / `set()` | `{1, 2, 3}` or `set([1,2,3])` |
 
 > *Dictionaries preserve insertion order in Python 3.7+.
 
 ---
 
-## 🟦 List
+### 🟦 List
 
-### What is a List?
+#### 🤷‍♂️ What is a List?
 
 A **list** is a mutable, ordered collection that can store values of any type. Lists allow duplicates and let you change, add, or remove elements.
 
@@ -610,7 +619,7 @@ A **list** is a mutable, ordered collection that can store values of any type. L
 - **Duplicates:** Allowed.
 - **Heterogeneous:** Can store different data types together.
 
-### ✅ Creating Lists
+#### ✅ Creating Lists
 
 ```python
 nums = [1, 2, 3, 4]
@@ -621,7 +630,7 @@ nested = [[1, 2], [3, 4]]
 single_item = [42]
 ```
 
-### 🔢 Indexing & Slicing
+#### 🔢 Indexing & Slicing
 
 ```python
 fruits = ["apple", "banana", "cherry", "date"]
@@ -632,7 +641,7 @@ print(fruits[::-1])  # ['date', 'cherry', 'banana', 'apple']
 print(fruits[::2])   # ['apple', 'cherry']
 ```
 
-### 🔄 List Slicing Examples
+#### 🔄 List Slicing Examples
 
 ```python
 lst = [10, 20, 30, 40, 50, 60]
@@ -642,7 +651,7 @@ skip_one = lst[::2]         # [10, 30, 50]
 reverse = lst[::-1]         # [60, 50, 40, 30, 20, 10]
 ```
 
-### ♻️ Mutability: List vs String
+#### ♻️ Mutability: List vs String
 
 ```python
 s = "hello"
@@ -653,7 +662,7 @@ lst[0] = 10    # ✅ List is mutable
 print(lst)     # [10, 2, 3]
 ```
 
-### 🔁 Traversing a List
+#### 🔁 Traversing a List
 
 ```python
 for fruit in fruits:
@@ -667,23 +676,23 @@ upper = [f.upper() for f in fruits]
 print(upper)
 ```
 
-### 🛠️ Common List Methods (with Examples & Complexity)
+#### 🛠️ Common List Methods (with Examples & Complexity)
 
 | Method           | Description                            | Example           | Result                          | Complexity |
 | ---------------- | -------------------------------------- | ----------------- | ------------------------------- | ---------- |
-| `.append(x)`     | Add item to end                        | lst.append(5)     | [1, 2, 3, 5]                    | O(1)       |
-| `.insert(i,x)`   | Insert x at index i                    | lst.insert(1, 10) | [1, 10, 2, 3]                   | O(n)       |
-| `.extend(L)`     | Add items from another list            | lst.extend([6,7]) | [1, 2, 3, 6, 7]                 | O(k)       |
-| `.remove(x)`     | Remove first occurrence of x           | lst.remove(2)     | [1, 3]                          | O(n)       |
-| `.pop([i])`      | Remove & return item (last by default) | lst.pop()         | returns last item, list shrinks | O(1)/O(n)  |
-| `.clear()`       | Remove all items                       | lst.clear()       | []                              | O(n)       |
-| `.index(x)`      | Find first index of x                  | lst.index(3)      | 2                               | O(n)       |
-| `.count(x)`      | Count number of x                      | lst.count(2)      | 1                               | O(n)       |
-| `.sort()`        | Sort list in place                     | lst.sort()        | [1, 2, 3]                       | O(n log n) |
-| `.reverse()`     | Reverse list in place                  | lst.reverse()     | [3, 2, 1]                       | O(n)       |
-| `.copy()`        | Get a shallow copy                     | new = lst.copy()  | [1, 2, 3]                       | O(n)       |
+| `.append(x)`   | Add item to end                        | lst.append(5)     | [1, 2, 3, 5]                    | O(1)       |
+| `.insert(i,x)` | Insert x at index i                    | lst.insert(1, 10) | [1, 10, 2, 3]                   | O(n)       |
+| `.extend(L)`   | Add items from another list            | lst.extend([6,7]) | [1, 2, 3, 6, 7]                 | O(k)       |
+| `.remove(x)`   | Remove first occurrence of x           | lst.remove(2)     | [1, 3]                          | O(n)       |
+| `.pop([i])`    | Remove & return item (last by default) | lst.pop()         | returns last item, list shrinks | O(1)/O(n)  |
+| `.clear()`     | Remove all items                       | lst.clear()       | []                              | O(n)       |
+| `.index(x)`    | Find first index of x                  | lst.index(3)      | 2                               | O(n)       |
+| `.count(x)`    | Count number of x                      | lst.count(2)      | 1                               | O(n)       |
+| `.sort()`      | Sort list in place                     | lst.sort()        | [1, 2, 3]                       | O(n log n) |
+| `.reverse()`   | Reverse list in place                  | lst.reverse()     | [3, 2, 1]                       | O(n)       |
+| `.copy()`      | Get a shallow copy                     | new = lst.copy()  | [1, 2, 3]                       | O(n)       |
 
-#### 💡 Method Examples
+💡 Method Examples
 
 ```python
 lst = [3, 1, 4]
@@ -697,11 +706,11 @@ lst2 = lst.copy() # [4, 3, 1]
 lst.clear()       # []
 ```
 
-### ⏱️ List Operation Time Complexity (Big-O)
+#### ⏱️ List Operation Time Complexity (Big-O)
 
 | Operation           | Average Case | Notes                 |
 | ------------------- | ------------ | --------------------- |
-| Indexing `lst[i]`   | O(1)         |                       |
+| Indexing `lst[i]` | O(1)         |                       |
 | Append              | O(1)         |                       |
 | Insert              | O(n)         | At arbitrary position |
 | Delete              | O(n)         | Except at end         |
@@ -711,9 +720,9 @@ lst.clear()       # []
 
 ---
 
-## 🟧 Tuple
+### 🟧 Tuple
 
-### What is a Tuple?
+#### 🤷‍♂️ What is a Tuple?
 
 A **tuple** is like a list but **immutable** (cannot be changed after creation). Ordered, allows duplicates, and can have mixed data types.
 
@@ -724,7 +733,7 @@ A **tuple** is like a list but **immutable** (cannot be changed after creation).
 - **Duplicates:** Allowed.
 - **Heterogeneous:** Can store different data types.
 
-### ✅ Creating Tuples
+#### ✅ Creating Tuples
 
 ```python
 t1 = (1, 2, 3)
@@ -735,7 +744,7 @@ empty = ()
 nested = ((1, 2), (3, 4))
 ```
 
-### 🔢 Indexing & Slicing
+#### 🔢 Indexing & Slicing
 
 ```python
 t = (10, 20, 30, 40)
@@ -745,21 +754,21 @@ print(t[1:3])    # (20, 30)
 print(t[::-1])   # (40, 30, 20, 10)
 ```
 
-### 🔁 Traversing a Tuple
+#### 🔁 Traversing a Tuple
 
 ```python
 for item in t:
     print(item)
 ```
 
-### 🛠️ Useful Tuple Methods
+#### 🛠️ Useful Tuple Methods
 
 | Method        | Description            | Example     | Result | Complexity |
 | ------------- | ---------------------- | ----------- | ------ | ---------- |
-| `.count(x)`   | Count occurrences of x | t.count(20) | 1      | O(n)       |
-| `.index(x)`   | First index of x       | t.index(30) | 2      | O(n)       |
+| `.count(x)` | Count occurrences of x | t.count(20) | 1      | O(n)       |
+| `.index(x)` | First index of x       | t.index(30) | 2      | O(n)       |
 
-#### 💡 Tuple Examples
+##### 💡 Tuple Examples
 
 ```python
 # Tuple unpacking
@@ -775,7 +784,7 @@ def min_max(nums):
 lo, hi = min_max([3, 7, 1])
 ```
 
-#### 💡 Tuples are often used for:
+##### 💡 Tuples are often used for:
 
 - Fixed data (e.g., days of the week)
 - As dictionary keys
@@ -783,13 +792,13 @@ lo, hi = min_max([3, 7, 1])
 
 ---
 
-## 🟨 List vs Tuple: Differences
+#### 🟨 List vs Tuple: Differences
 
 | Property    | List          | Tuple                      |
 | ----------- | ------------- | -------------------------- |
-| Syntax      | `[1, 2, 3]`   | `(1, 2, 3)`                |
+| Syntax      | `[1, 2, 3]` | `(1, 2, 3)`              |
 | Mutability  | Mutable       | Immutable                  |
-| Methods     | Many          | Few (`count`, `index`)     |
+| Methods     | Many          | Few (`count`, `index`) |
 | Performance | Slower        | Faster                     |
 | Use case    | General data  | Fixed data, keys           |
 | Nesting     | Yes           | Yes                        |
@@ -810,7 +819,7 @@ tup = (1, 2, 3)
 
 ### What is a Dictionary?
 
-A **dictionary** is a mutable, unordered (insertion ordered as of 3.7+) collection of key-value pairs.  
+A **dictionary** is a mutable, unordered (insertion ordered as of 3.7+) collection of key-value pairs.
 Keys must be unique and immutable; values can be any type.
 
 #### 🏷️ Key Features
@@ -859,17 +868,17 @@ for key in person.keys():
 
 | Method               | Description                  | Example                               | Result             | Complexity |
 | -------------------- | ---------------------------- | ------------------------------------- | ------------------ | ---------- |
-| `.get(key, d)`       | Get value, or default        | person.get("age", 0)                  | 22                 | O(1)       |
-| `.keys()`            | All keys                     | person.keys()                         | dict_keys([...])   | O(1)       |
-| `.values()`          | All values                   | person.values()                       | dict_values([...]) | O(1)       |
-| `.items()`           | All key-value pairs          | person.items()                        | dict_items([...])  | O(1)       |
-| `.update(d2)`        | Merge another dictionary     | person.update({"age": 24})            | -                  | O(len(d2)) |
-| `.pop(key)`          | Remove & return value by key | person.pop("city")                    | "Dhaka"            | O(1)       |
-| `.popitem()`         | Remove & return last pair    | person.popitem()                      | (key, value)       | O(1)       |
-| `.clear()`           | Remove all items             | person.clear()                        | {}                 | O(n)       |
-| `.setdefault(k,v)`   | Get key, set if not exists   | person.setdefault("hobby", "reading") | "reading"          | O(1)       |
-| `.copy()`            | Shallow copy                 | p2 = person.copy()                    | {...}              | O(n)       |
-| `fromkeys()`         | Create dict from keys        | dict.fromkeys(['a','b'], 0)           | {'a': 0, 'b': 0}   | O(n)       |
+| `.get(key, d)`     | Get value, or default        | person.get("age", 0)                  | 22                 | O(1)       |
+| `.keys()`          | All keys                     | person.keys()                         | dict_keys([...])   | O(1)       |
+| `.values()`        | All values                   | person.values()                       | dict_values([...]) | O(1)       |
+| `.items()`         | All key-value pairs          | person.items()                        | dict_items([...])  | O(1)       |
+| `.update(d2)`      | Merge another dictionary     | person.update({"age": 24})            | -                  | O(len(d2)) |
+| `.pop(key)`        | Remove & return value by key | person.pop("city")                    | "Dhaka"            | O(1)       |
+| `.popitem()`       | Remove & return last pair    | person.popitem()                      | (key, value)       | O(1)       |
+| `.clear()`         | Remove all items             | person.clear()                        | {}                 | O(n)       |
+| `.setdefault(k,v)` | Get key, set if not exists   | person.setdefault("hobby", "reading") | "reading"          | O(1)       |
+| `.copy()`          | Shallow copy                 | p2 = person.copy()                    | {...}              | O(n)       |
+| `fromkeys()`       | Create dict from keys        | dict.fromkeys(['a','b'], 0)           | {'a': 0, 'b': 0}   | O(n)       |
 
 #### 💡 Dictionary Examples
 
@@ -904,7 +913,7 @@ print(students["Alice"]["math"])  # 90
 
 ### What is a Set?
 
-A **set** is an unordered collection of unique, immutable items.  
+A **set** is an unordered collection of unique, immutable items.
 Useful for membership tests, removing duplicates, and set operations.
 
 #### 🏷️ Key Features
@@ -942,18 +951,18 @@ for item in s:
 
 | Method               | Description                       | Example                                | Result      | Complexity            |
 | -------------------- | --------------------------------- | -------------------------------------- | ----------- | --------------------- |
-| `.add(x)`            | Add element                       | s.add(4)                               | {1,2,3,4}   | O(1)                  |
-| `.remove(x)`         | Remove element (error if missing) | s.remove(2)                            | {1,3}       | O(1)                  |
-| `.discard(x)`        | Remove if present (no error)      | s.discard(5)                           | -           | O(1)                  |
-| `.pop()`             | Remove & return arbitrary element | s.pop()                                | -           | O(1)                  |
-| `.clear()`           | Remove all items                  | s.clear()                              | set()       | O(n)                  |
-| `.copy()`            | Shallow copy                      | s2 = s.copy()                          | -           | O(n)                  |
-| `.update(iter)`      | Add elements from iterable        | s.update([4, 5])                       | {1,2,3,4,5} | O(k)                  |
-| `.union(t)`          | Set union                         | s.union({4, 5})                        | {1,2,3,4,5} | O(len(s)+len(t))      |
-| `.intersection(t)`   | Set intersection                  | s & {2,3,4} or s.intersection({2,3,4}) | {2,3}       | O(min(len(s),len(t))) |
-| `.difference(t)`     | Set difference                    | s - {2,3}                              | {1}         | O(len(s))             |
-| `.issubset(t)`       | Subset test                       | s.issubset({1,2,3,4})                  | True/False  | O(len(s))             |
-| `.issuperset(t)`     | Superset test                     | s.issuperset({1,2})                    | True/False  | O(len(t))             |
+| `.add(x)`          | Add element                       | s.add(4)                               | {1,2,3,4}   | O(1)                  |
+| `.remove(x)`       | Remove element (error if missing) | s.remove(2)                            | {1,3}       | O(1)                  |
+| `.discard(x)`      | Remove if present (no error)      | s.discard(5)                           | -           | O(1)                  |
+| `.pop()`           | Remove & return arbitrary element | s.pop()                                | -           | O(1)                  |
+| `.clear()`         | Remove all items                  | s.clear()                              | set()       | O(n)                  |
+| `.copy()`          | Shallow copy                      | s2 = s.copy()                          | -           | O(n)                  |
+| `.update(iter)`    | Add elements from iterable        | s.update([4, 5])                       | {1,2,3,4,5} | O(k)                  |
+| `.union(t)`        | Set union                         | s.union({4, 5})                        | {1,2,3,4,5} | O(len(s)+len(t))      |
+| `.intersection(t)` | Set intersection                  | s & {2,3,4} or s.intersection({2,3,4}) | {2,3}       | O(min(len(s),len(t))) |
+| `.difference(t)`   | Set difference                    | s - {2,3}                              | {1}         | O(len(s))             |
+| `.issubset(t)`     | Subset test                       | s.issubset({1,2,3,4})                  | True/False  | O(len(s))             |
+| `.issuperset(t)`   | Superset test                     | s.issuperset({1,2})                    | True/False  | O(len(t))             |
 
 #### 💡 Set Examples
 
@@ -975,7 +984,7 @@ unique = set(lst)   # {1, 2, 3, 4}
 | Operation       | Average Case | Notes      |
 | --------------- | ------------ | ---------- |
 | Add/Remove      | O(1)         |            |
-| Membership Test | O(1)         | `x in s`   |
+| Membership Test | O(1)         | `x in s` |
 | Traverse all    | O(n)         |            |
 | Set Operations  | O(len(s))    |            |
 
@@ -985,7 +994,7 @@ unique = set(lst)   # {1, 2, 3, 4}
 
 | Feature    | List         | Tuple          | Dictionary   | Set          |
 | ---------- | ------------ | -------------- | ------------ | ------------ |
-| Syntax     | `[1,2,3]`    | `(1,2,3)`      | `{'a': 1}`   | `{1,2,3}`    |
+| Syntax     | `[1,2,3]`  | `(1,2,3)`    | `{'a': 1}` | `{1,2,3}`  |
 | Ordered    | Yes          | Yes            | Yes*         | No           |
 | Mutable    | Yes          | No             | Yes          | Yes          |
 | Indexing   | Yes          | Yes            | By key       | No           |
@@ -1005,7 +1014,7 @@ Python allows you to build your own data structures for advanced needs:
 - Graph
 - (And more...)
 
-These are the backbone of Data Structures & Algorithms (DSA).  
+These are the backbone of Data Structures & Algorithms (DSA).
 But this note is focused on Python's **built-in** data structures only.
 
 ---
@@ -1013,6 +1022,7 @@ But this note is focused on Python's **built-in** data structures only.
 ## 🏁 Quick Practice Snippets
 
 **Lists:**
+
 ```python
 lst = [1, 2, 3]
 lst.append(4)
@@ -1030,6 +1040,7 @@ print(lst)
 ```
 
 **Tuples:**
+
 ```python
 t = (1, 2, 3)
 print(t[0])
@@ -1042,6 +1053,7 @@ nt = ((1, 2), (3, 4))
 ```
 
 **Dictionaries:**
+
 ```python
 person = {"name": "Rashed", "age": 22}
 person["country"] = "Bangladesh"
@@ -1057,6 +1069,7 @@ print(students["Alice"]["math"])
 ```
 
 **Sets:**
+
 ```python
 a = {1, 2, 3}
 b = {3, 4, 5}
