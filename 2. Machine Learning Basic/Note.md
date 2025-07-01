@@ -510,8 +510,6 @@ print(model.predict(new_data))
 
 ---
 
-
-
 # 🐍 Python for Machine Learning
 
 ## 📝 Comments in Python
@@ -1374,3 +1372,361 @@ print(set(lst))
 ---
 
 > **Tip:** Practice every example and method in your Python shell or script to master them!
+
+---
+
+# 📦 Machine Learning Model Project No. 01
+
+## 1️⃣ Download the Project Repository
+
+1. Visit the [project repository](https://github.com/AkarshVyas/Machine-Learning-Part-1).
+2. Download the repository and open the `practice` folder.
+3. Locate the CSV file: **insurance.csv**.
+
+The first few rows of `insurance.csv` look like this:
+
+| age | sex    | bmi    | children | smoker | region    | charges   |
+|-----|--------|--------|----------|--------|-----------|-----------|
+| 19  | female | 27.9   | 0        | yes    | southwest | 16884.92  |
+| 18  | male   | 33.77  | 1        | no     | southeast | 1725.552  |
+| 28  | male   | 33     | 3        | no     | southeast | 4449.462  |
+| 33  | male   | 22.705 | 0        | no     | northwest | 21984.47  |
+| 32  | male   | 28.88  | 0        | no     | northwest | 3866.855  |
+| 31  | female | 25.74  | 0        | no     | southeast | 3756.622  |
+| 46  | female | 33.44  | 1        | no     | southeast | 8240.59   |
+| 37  | female | 27.74  | 3        | no     | northwest | 7281.506  |
+| 37  | male   | 29.83  | 2        | no     | northeast | 6406.411  |
+
+---
+
+## 2️⃣ What is a CSV File?
+
+- **CSV** stands for **Comma-Separated Values**.
+- It is a plain text file for storing tabular data (rows and columns).
+
+---
+
+## 3️⃣ Structure: Rows and Columns
+
+- **Columns:** Vertical, represent a specific type of information (e.g., `age`, `sex`).
+- **Rows:** Horizontal, each is a single record (person).
+
+Example:
+
+| age | sex    | bmi   | children | smoker | region    | charges   |
+|-----|--------|-------|----------|--------|-----------|-----------|
+| 19  | female | 27.9  | 0        | yes    | southwest | 16884.924 |
+| 18  | male   | 33.77 | 1        | no     | southeast | 1725.5523 |
+
+---
+
+## 4️⃣ Columns in `insurance.csv`
+
+| Column   | Description                      | Type        | Example      |
+|----------|----------------------------------|-------------|--------------|
+| age      | Age of the person                | Numerical   | 19, 43       |
+| sex      | Gender of the person             | Categorical | male, female |
+| bmi      | Body Mass Index                  | Numerical   | 27.9, 33.77  |
+| children | Number of children/dependents    | Numerical   | 0, 2         |
+| smoker   | Whether the person is a smoker   | Categorical | yes, no      |
+| region   | Region in the US                 | Categorical | southwest    |
+| charges  | Medical insurance charges (cost) | Numerical   | 16884.924    |
+
+---
+
+## 5️⃣ Data Types
+
+- **Numerical (Quantitative):** Numbers for calculations (e.g., `age`, `bmi`, `children`, `charges`)
+  - **Integer:** Whole numbers (`age`, `children`)
+  - **Float:** Decimals (`bmi`, `charges`)
+- **Categorical (Qualitative):** Discrete categories/labels (`sex`, `smoker`, `region`)
+  - **Nominal:** No order (e.g., `sex`, `region`, `smoker`)
+  - **Ordinal:** Ordered categories (not present in this dataset)
+
+---
+
+### Categorical Data Types
+
+#### 1. Nominal Categorical Data
+
+- **Definition:** Categories with **no logical order**.
+- **Examples:**  
+  - Colors: red, blue, green  
+  - Gender: male, female  
+  - Region: southwest, southeast  
+  - Blood type: A, B, AB, O
+
+#### 2. Ordinal Categorical Data
+
+- **Definition:** Categories **with a meaningful order**.
+- **Examples:**  
+  - Education level: high school < bachelor < master < doctorate  
+  - Customer satisfaction: very dissatisfied < ... < very satisfied  
+  - T-shirt size: small < medium < large
+
+---
+
+#### Summary Table
+
+| Type    | Ordered? | Example                                                | Notes                                      |
+|---------|----------|--------------------------------------------------------|--------------------------------------------|
+| Nominal | No       | Eye color: brown, blue, green, hazel                   | No logical order or ranking                |
+| Ordinal | Yes      | Education: high school < bachelor < master < doctorate | Clear order, but difference not measurable |
+
+---
+
+**Summary:**  
+- **Nominal:** Categories with NO order (e.g., color, region, gender)  
+- **Ordinal:** Categories WITH order (e.g., education level, satisfaction rating)
+
+---
+
+## 6️⃣ Usage in Data Science / Analysis
+
+- **Numerical columns:** For calculations, statistics, regression (e.g., average `charges`)
+- **Categorical columns:** For grouping, filtering, statistical analysis (e.g., compare `charges` by `region`)
+- **Target Variable:** `charges` (for prediction)
+- **Feature Variables:** `age`, `sex`, `bmi`, `children`, `smoker`, `region`
+
+---
+
+## 7️⃣ Typical Questions / Data Operations
+
+- What is the average insurance charge by region?
+- Do smokers pay more in charges than non-smokers?
+- Is there a correlation between BMI and charges?
+- How does the number of children affect charges?
+
+---
+
+## 8️⃣ Summary Table
+
+| Column   | Data Type   | Role    | Notes                    |
+|----------|-------------|---------|--------------------------|
+| age      | Numerical   | Feature | Integer                  |
+| sex      | Categorical | Feature | Nominal (male/female)    |
+| bmi      | Numerical   | Feature | Float                    |
+| children | Numerical   | Feature | Integer                  |
+| smoker   | Categorical | Feature | Nominal (yes/no)         |
+| region   | Categorical | Feature | Nominal (US regions)     |
+| charges  | Numerical   | Target  | Float (cost, regression) |
+
+---
+
+**Key Points:**
+- **Rows:** Individual records (one person)
+- **Columns:** Attributes/features
+- **Numerical data:** For math/statistics
+- **Categorical data:** For grouping/labeling
+- **Dataset use:** Insurance cost prediction, EDA
+
+---
+
+## 9️⃣ Getting Started with the Project
+
+### 🗂️ Step 1: Download the CSV File
+
+- Download insurance.csv from this repository
+
+### 💻 Step 2: Set Up Google Colab
+
+1. Go to [Google Colaboratory](https://colab.research.google.com/).
+2. Create a new notebook.  
+  ![Create notebook](image/Note/1751365635689.png)
+3. Rename the notebook to `insurance.ipynb`.  
+  ![Rename notebook](image/Note/1751365849198.png)
+
+---
+
+### 📥 Step 3: Import Required Libraries
+
+```python
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+```
+
+---
+
+### 🚫 Step 4: Suppress Warnings
+
+```python
+import warnings
+warnings.filterwarnings('ignore')
+```
+**Purpose:** Keeps output clean by hiding warning messages.
+
+---
+
+### 📄 Step 5: Load the Data
+
+```python
+df = pd.read_csv('insurance.csv')
+```
+**Purpose:** Loads the CSV into a pandas DataFrame named `df`.
+
+---
+
+### 👀 Step 6: Display the Data
+
+```python
+df
+```
+**Output:**
+
+|    | age | sex    | bmi    | children | smoker | region    | charges    |
+|----|-----|--------|--------|----------|--------|-----------|------------|
+| 0  | 19  | female | 27.900 | 0        | yes    | southwest | 16884.924  |
+| 1  | 18  | male   | 33.770 | 1        | no     | southeast | 1725.552   |
+| 2  | 28  | male   | 33.000 | 3        | no     | southeast | 4449.462   |
+| 3  | 33  | male   | 22.705 | 0        | no     | northwest | 21984.471  |
+| 4  | 32  | male   | 28.880 | 0        | no     | northwest | 3866.855   |
+|... | ... | ...    | ...    | ...      | ...    | ...       | ...        |
+|1337| 61  | female | 29.070 | 0        | yes    | northwest | 29141.360  |
+
+**Shape:** 1338 rows × 7 columns
+
+---
+
+### 📊 Step 7: Exploratory Data Analysis (EDA)
+
+#### 🔢 7.1 Check Data Shape
+
+```python
+df.shape
+```
+**Output:**
+```
+(1338, 7)
+```
+- 1338 rows, 7 columns
+
+---
+
+#### 👓 7.2 View First Few Rows
+
+```python
+df.head()
+```
+**Output:**
+
+| age | sex    | bmi    | children | smoker | region    | charges    |
+|-----|--------|--------|----------|--------|-----------|------------|
+| 19  | female | 27.900 | 0        | yes    | southwest | 16884.924  |
+| 18  | male   | 33.770 | 1        | no     | southeast | 1725.552   |
+| 28  | male   | 33.000 | 3        | no     | southeast | 4449.462   |
+| 33  | male   | 22.705 | 0        | no     | northwest | 21984.471  |
+| 32  | male   | 28.880 | 0        | no     | northwest | 3866.855   |
+
+---
+
+#### 📝 7.3 Data Info (Types & Nulls)
+
+```python
+df.info()
+```
+**Output:**
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1338 entries, 0 to 1337
+Data columns (total 7 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   age       1338 non-null   int64  
+ 1   sex       1338 non-null   object 
+ 2   bmi       1338 non-null   float64
+ 3   children  1338 non-null   int64  
+ 4   smoker    1338 non-null   object 
+ 5   region    1338 non-null   object 
+ 6   charges   1338 non-null   float64
+dtypes: float64(2), int64(2), object(3)
+memory usage: 73.3+ KB
+```
+- No missing values; 2 float, 2 int, 3 object columns.
+
+---
+
+#### 📈 7.4 Statistical Summary (Numerical Columns)
+
+```python
+df.describe()
+```
+**Output:**
+
+|       | age   | bmi    | children | charges    |
+|-------|-------|--------|----------|------------|
+| count | 1338  | 1338   | 1338     | 1338       |
+| mean  | 39.21 | 30.66  | 1.09     | 13270.42   |
+| std   | 14.05 | 6.10   | 1.21     | 12110.01   |
+| min   | 18    | 15.96  | 0        | 1121.87    |
+| 25%   | 27    | 26.30  | 0        | 4740.29    |
+| 50%   | 39    | 30.40  | 1        | 9382.03    |
+| 75%   | 51    | 34.69  | 2        | 16639.91   |
+| max   | 64    | 53.13  | 5        | 63770.43   |
+
+---
+
+#### 🕳️ 7.5 Check for Missing Values
+
+```python
+df.isnull().sum()
+```
+**Output:**
+```
+age         0
+sex         0
+bmi         0
+children    0
+smoker      0
+region      0
+charges     0
+dtype: int64
+```
+- No missing values in any column.
+
+---
+
+#### 🏷️ 7.6 List Column Names
+
+```python
+df.columns
+```
+**Output:**
+```
+Index(['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'], dtype='object')
+```
+
+---
+
+#### 🔢 7.7 Select Numeric Columns
+
+```python
+numeric_columns = ['age', 'bmi', 'children', 'charges']
+```
+- These columns are suitable for numeric analysis and plotting.
+
+---
+
+#### 📊 7.8 Plot Distributions of Numeric Columns
+
+```python
+for column in numeric_columns:
+  plt.figure(figsize=(6,4))
+  sns.histplot(df[column], kde=True, bins=20)
+  plt.title(f'Distribution of {column}')
+  plt.xlabel(column)
+  plt.ylabel('Frequency')
+  plt.show()
+```
+**Output:**
+
+- Four histograms (one for each column):
+  - **Age:** Distribution of ages in the dataset.
+  - **BMI:** Spread of BMI values.
+  - **Children:** How many people have 0, 1, 2, etc. children.
+  - **Charges:** Distribution of insurance charges.
+
+---
+
+
